@@ -89,8 +89,11 @@ class GeminiLLM:
             "- echt\n"
             "- entspannt\n"
             "- wertschätzend, aber nicht übertrieben\n\n"
-            "Gib das Ergebnis EXAKT im folgenden Format zurück, getrennt durch '|||':\n"
-            "|||||| \n\n"
+             "FORMAT-ANWEISUNG (Absolut zwingend):\n"
+            "Ich brauche deine Antwort technisch getrennt, damit meine Software sie lesen kann.\n"
+            "Nutze exakt die Zeichenkette '|||' als Trenner zwischen den drei Teilen.\n\n"
+            "Dein Output muss so aussehen:\n"
+            "[Deine Entscheidung] ||| [Entwurf Version A] ||| [Entwurf Version B]\n\n"
             f"Transkript (Auszug): {text}"
         )
         try:
@@ -270,5 +273,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
