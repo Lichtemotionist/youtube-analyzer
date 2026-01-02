@@ -90,7 +90,7 @@ class GeminiLLM:
             "- entspannt\n"
             "- wertschätzend, aber nicht übertrieben\n\n"
             "Gib das Ergebnis EXAKT im folgenden Format zurück, getrennt durch '|||':\n"
-            "Entscheidungstext||| ||| \n\n"
+            "|||||| \n\n"
             f"Transkript (Auszug): {text}"
         )
         try:
@@ -270,4 +270,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
